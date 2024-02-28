@@ -11,8 +11,9 @@ const Routing = () => {
           <Route index element={<HomePage />} />
           <Route path="meal/:id" element={<MealDetailsPage />} />
           <Route path="meal/category/:name" element={<CategoryPage />} />
-          <Route path="*" element={<ErrorPage />} />
+
         </Route>
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   </>)

@@ -1,13 +1,10 @@
-
-import "./Loader.css";
-
+import loader from "../../assets/loader.json"
+import Lottie from 'lottie-react'
 
 const Loader = () => {
   return (
-    <div className='loader my-5'>
-      <div className='container flex align-center justify-center'>
-        <p>Loading...</p>
-      </div>
+    <div className='container w-80 mx-auto'>
+      <Lottie animationData={loader} />
     </div>
   )
 }

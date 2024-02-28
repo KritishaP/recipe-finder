@@ -8,6 +8,7 @@ const HomePage = () => {
   const { categories, meals, categoryLoading, mealsLoading } = useMealContext();
   console.log(categories, meals, categoryLoading, mealsLoading)
   return (<>
+
     <main className='main-content'>
       {(mealsLoading) ? <Loader /> : (meals === null) ? <NotFound /> : (meals?.length) ? <MealList meals={meals} /> : ""}
       {(categoryLoading) ? <Loader /> : <CategoryList categories={categories} />}
